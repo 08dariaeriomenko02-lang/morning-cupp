@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="MORNING CUP — городская кофейня с медленным ритмом, свежей обжаркой и тёплой атмосферой. Coffee. Mood. You."
+    />
+    <title>MORNING CUP — Coffee. Mood. You.</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Outfit:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a class="logo" href="#hero" aria-label="MORNING CUP — на главную">
+          <span class="logo-mark" aria-hidden="true"></span>
+          Morning Cup
+        </a>
+
+        <nav class="nav-desktop" aria-label="Основная навигация">
+          <ul>
+            <li><a href="#popular">Популярное</a></li>
+            <li><a href="#about">О нас</a></li>
+            <li><a href="#menu">Меню</a></li>
+            <li><a href="#reviews">Отзывы</a></li>
+            <li><a href="#location">Локация</a></li>
+          </ul>
+        </nav>
+
+        <a class="btn btn-small header-cta" href="#menu">Меню</a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-controls="mobile-nav"
+          aria-expanded="false"
+          aria-label="Открыть меню"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <div class="mobile-nav" id="mobile-nav" hidden aria-hidden="true">
+      <nav aria-label="Мобильная навигация">
+        <ul>
+          <li><a href="#popular">Популярное</a></li>
+          <li><a href="#about">О кофейне</a></li>
+          <li><a href="#menu">Меню</a></li>
+          <li><a href="#reviews">Отзывы</a></li>
+          <li><a href="#location">Локация</a></li>
+        </ul>
+        <a class="btn btn-light" href="#menu">Посмотреть меню</a>
+      </nav>
+    </div>
+    <div class="nav-backdrop" hidden></div>
+
+    <main id="main">
+      <section class="hero" id="hero" aria-labelledby="hero-title">
+        <div class="hero-media">
+          <img
+            src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1800&q=80"
+            alt="Чашка капучино на деревянном столе в утреннем свете"
+            width="1800"
+            height="1200"
+          />
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+          <p class="eyebrow">Specialty coffee · Москва</p>
+          <h1 id="hero-title">Morning Cup</h1>
+          <p class="hero-tagline">Coffee. Mood. You.</p>
+          <p class="hero-lead">
+            Небольшая кофейня на Покровке, куда приходят за тишиной, точным
+            эспрессо и разговором, который никуда не спешит.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-light" href="#menu">Посмотреть меню</a>
+            <a class="btn btn-ghost" href="#location">Мы на карте</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section popular" id="popular" aria-labelledby="popular-title">
+        <div class="container">
+          <header class="section-header">
+            <p class="eyebrow">Выбор гостей</p>
+            <h2 id="popular-title">Популярное</h2>
+            <p class="section-intro">
+              То, что чаще всего заказывают с утра — и то, за чем возвращаются
+              вечером.
+            </p>
+          </header>
+
+          <div class="popular-grid">
+            <article class="product-card">
+              <figure>
+                <img
+                  src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=900&q=80"
+                  alt="Капучино с бархатистой молочной пенкой"
+                  width="900"
+                  height="1100"
+                  loading="lazy"
+                />
+              </figure>
+              <div class="product-body">
+                <div class="product-top">
+                  <h3>Cappuccino</h3>
+                  <p class="price">320 ₽</p>
+                </div>
+                <p>Двойной эспрессо, шёлковое молоко и короткая пауза перед днём.</p>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <figure>
+                <img
+                  src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=900&q=80"
+                  alt="Холодный латте со льдом в высоком стакане"
+                  width="900"
+                  height="1100"
+                  loading="lazy"
+                />
+              </figure>
+              <div class="product-body">
+                <div class="product-top">
+                  <h3>Iced Latte</h3>
+                  <p class="price">360 ₽</p>
+                </div>
+                <p>Холодный, чистый, без лишней сладости — для жаркого города.</p>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <figure>
+                <img
+                  src="https://images.unsplash.com/photo-1485808191679-5f86510681a2?auto=format&fit=crop&w=900&q=80"
+                  alt="Кремовый раф в керамической чашке"
+                  width="900"
+                  height="1100"
+                  loading="lazy"
+                />
+              </figure>
+              <div class="product-body">
+                <div class="product-top">
+                  <h3>Raf Coffee</h3>
+                  <p class="price">390 ₽</p>
+                </div>
+                <p>Сливочная текстура и ванильный акцент. Наш фирменный ритуал.</p>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <figure>
+                <img
+                  src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=900&q=80"
+                  alt="Кусок чизкейка на тарелке"
+                  width="900"
+                  height="1100"
+                  loading="lazy"
+                />
+              </figure>
+              <div class="product-body">
+                <div class="product-top">
+                  <h3>Cheesecake</h3>
+                  <p class="price">420 ₽</p>
+                </div>
+                <p>Плотный, нежный, с тонкой ванилью. Лучше всего — с фильтром.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about" id="about" aria-labelledby="about-title">
+        <div class="container about-grid">
+          <div class="about-copy">
+            <p class="eyebrow">С 2021 года</p>
+            <h2 id="about-title">О кофейне</h2>
+            <p>
+              MORNING CUP появился из простой идеи: кофе может быть точным, а
+              утро — неспешным. Мы обжариваем зерно небольшими партиями,
+              варим на эспрессо и воронке и держим зал таким, чтобы в нём
+              хотелось остаться.
+            </p>
+            <p>
+              Здесь нет спешки и громкой музыки. Есть свет из окна на Покровке,
+              деревянные столы, керамика и бариста, которые помнят, как вы
+              пьёте капучино.
+            </p>
+            <ul class="about-facts">
+              <li>
+                <span>12</span>
+                сортов в ротации
+              </li>
+              <li>
+                <span>7:30</span>
+                открываемся в будни
+              </li>
+              <li>
+                <span>1</span>
+                зал, без суеты
+              </li>
+            </ul>
+          </div>
+          <figure class="about-photo">
+            <img
+              src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1400&q=80"
+              alt="Интерьер кофейни: барная стойка, мягкий свет и деревянная мебель"
+              width="1400"
+              height="1750"
+              loading="lazy"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section class="section menu" id="menu" aria-labelledby="menu-title">
+        <div class="container">
+          <header class="section-header">
+            <p class="eyebrow">Карта напитков и еды</p>
+            <h2 id="menu-title">Меню</h2>
+            <p class="section-intro">
+              Короткое меню — чтобы готовить каждое блюдо и каждую чашку
+              внимательно.
+            </p>
+          </header>
+
+          <div class="menu-tabs" role="tablist" aria-label="Категории меню">
+            <button type="button" class="menu-tab is-active" role="tab" aria-selected="true" aria-controls="panel-coffee" id="tab-coffee" data-tab="coffee">
+              Coffee
+            </button>
+            <button type="button" class="menu-tab" role="tab" aria-selected="false" aria-controls="panel-cold" id="tab-cold" data-tab="cold">
+              Cold Drinks
+            </button>
+            <button type="button" class="menu-tab" role="tab" aria-selected="false" aria-controls="panel-desserts" id="tab-desserts" data-tab="desserts">
+              Desserts
+            </button>
+            <button type="button" class="menu-tab" role="tab" aria-selected="false" aria-controls="panel-breakfast" id="tab-breakfast" data-tab="breakfast">
+              Breakfast
+            </button>
+          </div>
+
+          <div class="menu-panels">
+            <div class="menu-panel is-active" id="panel-coffee" role="tabpanel" aria-labelledby="tab-coffee">
+              <ul class="menu-list">
+                <li>
+                  <div>
+                    <h3>Espresso</h3>
+                    <p>Плотный шот с шоколадным послевкусием</p>
+                  </div>
+                  <span>220 ₽</span>
+                </li>
+                <li>
+                  <div>
+                    <h3>Americano</h3>
+                    <p>Эспрессо и горячая вода, чистый профиль зерна</p>
+                  </div>
+                  <span>250 ₽</span>
+                </li>
+                <li>
+                  <div>
+                    <h3>Cappuccino</h3>
+                    <p>Молочная шапка, какао и ореховые ноты</p>
+                  </div>
+                  <span>320 ₽</span>
+                </li>
+                <li>
+                  <div>
+                    <h3>Flat White</h3>
+                    <p>Больше кофе, меньше молока, бархатистая текстура</p>
+                  </div>
+                  <span>340 ₽</span>
+                </li>
+                <li>
+                  <div>
+                    <h3>Raf Coffee</h3>
+                    <p>Сливки, ваниль, наш фирменный баланс</p>
+                  </div>
+                  <span>390 ₽</span>
+                </li>
+                <li>
+                  <div>
+                    <h3>Filter</h3>
+                    <p>Воронка V60. Зерно меняется каждую неделю</p>
+                  </div>
+                  <span>310 ₽</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="menu-panel" id="panel-cold" role="tabpanel" aria-labelledby="tab-cold" hidden>
+              <ul class="menu-list">
+                <li>
+                  <div>
+                    <h3>Iced Latte</h3>
+                    <p>Холодное молоко, эспрессо и крупный лёд</p>
+                  </div>
+                  <span>360 ₽</span>
+                </li>
+                <li>
+                  <div>
+                    <h3>Iced Americano</h3>
+                    <p>Лёгкий, бодрящий, без молока</p>
+                  </div>
+                  <span>270 ₽</span>
+                </li>
+                <li>
+                  <div>
+                    <h3>Cold Brew</h3>
+                    <p>12 часов экстракции, мягкая горчинка</p>
+                  </div>
+                  <span>380 ₽</span>
+                </li>
+                <li>
+                  <div>
+                    <h3>Espresso Tonic</h3>
+                    <p>Тоник, цитрус и яркий эспрессо</p>
+                  </div>
+                  <span>390 ₽</span>
+                </li>
+                <li>
+                  <div>
+                    <h3>Matcha Lemonade</h3>
+                    <p>Церемониальная матча и домашний лимонный сироп</p>
+                  </div>
+                  <span>410 ₽</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="menu-panel" id="panel-desserts" role="tabpanel" aria-labelledby="tab-desserts" hidden>
+              <ul class="menu-list">
+                <li>
+                  <div>
+                    <h3>Cheesecake</h3>
+                    <p>Классика на песочной основе</p>
+                  </div>
+                  <span>420 ₽</span>
+                </li>
+                <li>
+                  <div>
+                    <h3>Chocolate Brownie</h3>
+                    <p>Тёплый, с морской солью</p>
+                  </div>
+                  <span>380 ₽</span>
+                </li>
+                <li>
+                  <div>
+                    <h3>Carrot Cake</h3>
+                    <p>Пряный, с крем-чизом</p>
+                  </div>
+                  <span>390 ₽</span>
+                </li>
+                <li>
+                  <div>
+                    <h3>Croissant</h3>
+                    <p>Слоеное тесто, масло, хруст</p>
+                  </div>
+                  <span>240 ₽</span>
+                </li>
+                <li>
+                  <div>
+                    <h3>Cinnamon Bun</h3>
+                    <p>Корица и ванильная глазурь</p>
+                  </div>
+                  <span>280 ₽</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="menu-panel" id="panel-breakfast" role="tabpanel" aria-labelledby="tab-breakfast" hidden>
+              <ul class="menu-list">
+                <li>
+                  <div>
+                    <h3>Avocado Toast</h3>
+                    <p>Закваска, авокадо, лимон, чили-флейки</p>
+                  </div>
+                  <span>490 ₽</span>
+                </li>
+                <li>
+                  <div>
+                    <h3>Granola Bowl</h3>
+                    <p>Йогурт, гранола, сезонные ягоды</p>
+                  </div>
+                  <span>450 ₽</span>
+                </li>
+                <li>
+                  <div>
+                    <h3>Eggs &amp; Sourdough</h3>
+                    <p>Яйца пашот, тост, травы</p>
+                  </div>
+                  <span>520 ₽</span>
+                </li>
+                <li>
+                  <div>
+                    <h3>Oatmeal</h3>
+                    <p>Овсянка на молоке, мёд, орехи</p>
+                  </div>
+                  <span>360 ₽</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reviews" id="reviews" aria-labelledby="reviews-title">
+        <div class="container">
+          <header class="section-header">
+            <p class="eyebrow">Гости о нас</p>
+            <h2 id="reviews-title">Отзывы</h2>
+          </header>
+
+          <div class="reviews-grid">
+            <blockquote>
+              <p>
+                «Самый спокойный кофе на Покровке. Капучино как надо, и никто
+                не торопит уйти.»
+              </p>
+              <footer>
+                <cite>Анна К.</cite>
+                <span>дизайнер</span>
+              </footer>
+            </blockquote>
+            <blockquote>
+              <p>
+                «Раф здесь — отдельная причина приехать. Мягкий, не приторный,
+                с очень чистым эспрессо.»
+              </p>
+              <footer>
+                <cite>Илья М.</cite>
+                <span>фотограф</span>
+              </footer>
+            </blockquote>
+            <blockquote>
+              <p>
+                «Прихожу работать утром: свет хороший, музыка тихая, чизкейк
+                заканчивается слишком быстро.»
+              </p>
+              <footer>
+                <cite>Мария С.</cite>
+                <span>редактор</span>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <section class="section location" id="location" aria-labelledby="location-title">
+        <div class="container location-grid">
+          <div class="location-copy">
+            <p class="eyebrow">Найдёте нас легко</p>
+            <h2 id="location-title">Локация</h2>
+            <p>
+              Мы на Покровке, в двух минутах от метро Китай-город. Ищите
+              тёплый свет витрины и запах свежей обжарки.
+            </p>
+
+            <address>
+              <strong>Адрес</strong>
+              ул. Покровка, 18<br />
+              Москва, 101000
+            </address>
+
+            <p>
+              <strong>Часы работы</strong><br />
+              Пн–Пт: 7:30–21:00<br />
+              Сб–Вс: 9:00–21:00
+            </p>
+
+            <a
+              class="btn"
+              href="https://www.google.com/maps/dir/?api=1&destination=ул.+Покровка,+18,+Москва"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Построить маршрут
+            </a>
+          </div>
+
+          <figure class="location-photo">
+            <img
+              src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1400&q=80"
+              alt="Уютный зал кофейни с деревянными столами и мягким дневным светом"
+              width="1400"
+              height="1000"
+              loading="lazy"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section class="cta" id="visit" aria-labelledby="cta-title">
+        <div class="container cta-inner">
+          <h2 id="cta-title">Заглянешь на кофе?</h2>
+          <p>Мы уже ставим чашки. Осталось выбрать, с чего начнём утро.</p>
+          <a class="btn btn-light" href="#menu">Посмотреть меню</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <p class="footer-logo">Morning Cup</p>
+          <p>Coffee. Mood. You.</p>
+        </div>
+        <nav aria-label="Социальные сети">
+          <ul class="socials">
+            <li>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+            </li>
+            <li>
+              <a href="https://t.me" target="_blank" rel="noopener noreferrer">Telegram</a>
+            </li>
+            <li>
+              <a href="https://vk.com" target="_blank" rel="noopener noreferrer">VK</a>
+            </li>
+          </ul>
+        </nav>
+        <p class="copyright">© 2026 MORNING CUP. Учебный проект для портфолио.</p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
